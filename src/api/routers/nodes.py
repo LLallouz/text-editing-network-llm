@@ -87,7 +87,7 @@ def list_nodes() -> List[NodeResponse]:
                 nodes.append(node_response)
             except Exception as e:
                 # Log error but continue with other nodes
-                print(f"Error converting node {path}: {e}")
+                logger.warning(f"Error converting node {path}: {e}", exc_info=True)
                 continue
     
     return nodes

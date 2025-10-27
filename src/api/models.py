@@ -15,10 +15,7 @@ Design Decisions:
 from typing import Any, Dict, List, Optional, Union
 from pydantic import BaseModel, Field
 from enum import Enum
-
 import logging
-from typing import Any
-from typing import Union
 
 # Set up logging
 logger = logging.getLogger("api.patch")

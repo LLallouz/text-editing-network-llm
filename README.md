@@ -21,26 +21,26 @@ The Text Loom philosophy, it's backend, is all about **text**.
 *Specifically* **lists of text.**  
 
 ## Nodes pass text to each other:  
-* One node creates text: **([Text](https://github.com/kleer001/Text_Loom/wiki/Text-Node))**
-* Some nodes read and write text files: **([FileIn](https://github.com/kleer001/Text_Loom/wiki/FileIn-Node), [FileOut](https://github.com/kleer001/Text_Loom/wiki/FileOut-Node))**
-* Some nodes create lists: **([Section](https://github.com/kleer001/Text_Loom/wiki/Section-Node), [Split](https://github.com/kleer001/Text_Loom/wiki/Split-Node),  [MakeList](https://github.com/kleer001/Text_Loom/wiki/MakeList-Node))**
-* One node combines lists: **([Merge](https://github.com/kleer001/Text_Loom/wiki/Merge-Node))**
-* One node talks to an LLM: **([Query](https://github.com/kleer001/Text_Loom/wiki/Query-Node))**
-* One node can contain other nodes and iterate over them in loops: **([Looper](https://github.com/kleer001/Text_Loom/wiki/Looper-Node))**
-* And one node does nothing at all except pass the text along: **([Null](https://github.com/kleer001/Text_Loom/wiki/Null-Node))**
+* One node creates text: **([Text](https://github.com/LLallouz/text-editing-network-llm/wiki/Text-Node))**
+* Some nodes read and write text files: **([FileIn](https://github.com/LLallouz/text-editing-network-llm/wiki/FileIn-Node), [FileOut](https://github.com/LLallouz/text-editing-network-llm/wiki/FileOut-Node))**
+* Some nodes create lists: **([Section](https://github.com/LLallouz/text-editing-network-llm/wiki/Section-Node), [Split](https://github.com/LLallouz/text-editing-network-llm/wiki/Split-Node),  [MakeList](https://github.com/LLallouz/text-editing-network-llm/wiki/MakeList-Node))**
+* One node combines lists: **([Merge](https://github.com/LLallouz/text-editing-network-llm/wiki/Merge-Node))**
+* One node talks to an LLM: **([Query](https://github.com/LLallouz/text-editing-network-llm/wiki/Query-Node))**
+* One node can contain other nodes and iterate over them in loops: **([Looper](https://github.com/LLallouz/text-editing-network-llm/wiki/Looper-Node))**
+* And one node does nothing at all except pass the text along: **([Null](https://github.com/LLallouz/text-editing-network-llm/wiki/Null-Node))**
 
 
 
 ## :rocket: Start (automagically)
 
-<code>curl -fsSL https://raw.githubusercontent.com/kleer001/Text_Loom/master/install.sh | bash ; cd Text_Loom </code>
+<code>curl -fsSL https://raw.githubusercontent.com/LLallouz/text-editing-network-llm/master/install.sh | bash ; cd Text_Loom </code>
  
 
 ## :sparkles: Start (manual) 
 <details>
 * Make sure you have **git** installed and **python3** (version 3.8 or higher)
 * **Clone** the repository  
-<code>git clone https://github.com/kleer001/Text_Loom ; cd Text_Loom</code>
+<code>git clone https://github.com/LLallouz/text-editing-network-llm.git ; cd text-editing-network-llm</code>
 * **Create** a local venv  
 <code>python3 -m venv .venv</code>
 * **Activate** it and set PYTHONPATH  
@@ -85,7 +85,7 @@ and **export PYTHONPATH=\$PYTHONPATH:$(pwd)/src** with **set PYTHONPATH=%PYTHONP
 
 ### Primary Workspace
 Each Primary window can be navigated to with the keycommand **CTRL+(n/a/g)** 
-- [**N**ode Network](#node-network) - Central workspace for creating and connecting nodes. Displays [node](https://github.com/kleer001/Text_Loom/wiki/Nodes,-nodes,-nodes) states, connections, and hierarchies using visual indicators.
+- [**N**ode Network](#node-network) - Central workspace for creating and connecting nodes. Displays [node](https://github.com/LLallouz/text-editing-network-llm/wiki/Nodes,-nodes,-nodes) states, connections, and hierarchies using visual indicators.
 - [P**a**rameters](#parameters) - Center Top panel showing properties of selected nodes.
 - [**G**lobals](#globals) - Right Top panel. System-wide variables accessible across the network.
 
@@ -97,5 +97,5 @@ Each Primary window can be navigated to with the keycommand **CTRL+(n/a/g)**
 
 ---
 
-# Please see the extensive [wiki](https://github.com/kleer001/Text_Loom/wiki) for more detailed information.
+# Please see the extensive [wiki](https://github.com/LLallouz/text-editing-network-llm/wiki) for more detailed information.
 

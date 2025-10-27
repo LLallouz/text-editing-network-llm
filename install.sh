@@ -67,7 +67,7 @@ check_prerequisites() {
 
 clone_repo() {
     log "Cloning the repository..."
-    git clone https://github.com/kleer001/Text_Loom.git "$SCRIPT_DIR/Text_Loom"
+    git clone https://github.com/LLallouz/text-editing-network-llm.git "$SCRIPT_DIR/Text_Loom"
     cd "$SCRIPT_DIR/Text_Loom" || exit 1
 }
 

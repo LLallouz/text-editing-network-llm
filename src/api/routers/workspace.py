@@ -9,8 +9,10 @@ from fastapi import APIRouter, HTTPException
 from api.models import WorkspaceState, NodeResponse, ConnectionResponse, node_to_response, connection_to_response
 from core.base_classes import NodeEnvironment
 from core.global_store import GlobalStore
+import logging
 
 router = APIRouter()
+logger = logging.getLogger("api.routers.workspace")
 
 
 @router.get(
@@ -92,7 +94,7 @@ def get_workspace() -> WorkspaceState:
                     node_response = node_to_response(node)
                     nodes.append(node_response)
                 except Exception as e:
-                    print(f"Error converting node {path}: {e}")
+                    logger.warning(f"Error converting node {path}: {e}", exc_info=True)
                     continue
         
         # Get all connections (deduplicated)
@@ -123,7 +125,7 @@ def get_workspace() -> WorkspaceState:
                             conn_response = connection_to_response(conn)
                             connections.append(conn_response)
                         except Exception as e:
-                            print(f"Error converting connection {conn_id}: {e}")
+                            logger.warning(f"Error converting connection {conn_id}: {e}", exc_info=True)
                             continue
         
         # Get global variables
